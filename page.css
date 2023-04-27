@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url(icon/nbg.png);
+    margin-left: 100px;
+}
+.main {
+    
+}
+.cards {
+        width: 20%;
+        background-color: #fff;
+        display: inline-block;
+        border-radius: 5px;
+        margin: 40px;
+}      
+.cards:hover{
+        box-shadow: 2px 2px 10px black; 
+
+}
+.image img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.info{
+    text-align: center;
+    padding: 5px;
+}
+.des{
+    text-align: center;
+    padding: 10px;
+}
+.des1{
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+}
+button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+.navbar{
+	position: fixed;
+	width: 100%;
+	padding: 15px 0;
+	font-family: 'ubuntu', sans-serif;
+	z-index: 999;
+	
+}
+
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	
+    text-align: center;
+
+}
+
+.navbar .logo a{
+	color: #fff;
+	font-size: 35px;
+	font-weight: 600;
+    align-content: center;
+    text-align: center;
+}
+.navbar .logo a .span1{
+	color: darkgoldenrod;
+}
+.navbar .logo a .span2{
+	color: darkgoldenrod;
+}
+.navbar .logo a .span3{
+	color: darkgoldenrod;
+}
+.navbar .logo a .span4{
+	color: darkgoldenrod;
+}
+.navbar .logo a .span5{
+	color: darkgoldenrod;
+}
+.navbar .logo a .span6{
+	color: darkgoldenrod;
+}
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+.navbar .menu li span{
+	color: darkgoldenrod;
+}
+.navbar .menu li .asd1{
+	color: darkgoldenrod;
+}
+.navbar .menu li.asd2{
+	color: darkgoldenrod;
+}
+.navbar .menu li span:hover{
+	color: darkgoldenrod;
+	transition: color 0.3s ease;
+}
+.navbar .menu li a{
+	position: relative;
+	font-size: 1.1em;
+	color:darkgoldenrod;
+	text-decoration: none;
+	font-weight: 400;
+	margin-left: 40px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: #eee;
+}
+.logo img{
+    float: left;
+    width: 50px;
+    height: auto;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(icon/nbg.png);
+    background-position: center;
+    background-size: cover;
+}
+.side-nav{
+    width: 110px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(255,255,255, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: width 0.5s;
+    
+} 
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    font-size: 12px;
+    padding: 10px
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.user div{
+    display: none;
+
+
+}
+.user h2{
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.user img{
+    width: 30px;
+    border-radius: 40%;
+    margin: auto;
+    justify-content: center;
+}
+.star-img{
+    width: 20px;
+    display: none;
+}
+
+ul{
+    list-style:none;
+    padding: 0 15px;   
+}
+ul li {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+ul li img{
+    width: 30px;
+    margin-right: 0px;
+
+}
+ul li p{
+    white-space: nowrap;
+    display: none;
+}
+
+.side-nav:hover{
+    width: 250px;
+
+}
+.side-nav:hover user.div{
+    display: block;
+}
+.side-nav:hover .user{
+    width: 100%;
+    background: rgba(255,255,255, 0.2);
+    backdrop-filter: blur(5px);
+
+}
+.side-nav:hover .user.img{
+    margin: 0 ;
+
+}
+.side-nav:hover ul li p {
+    display: block;
+
+}
+.side-nav:hover ul li img{
+    margin-right: 10px;
+}
+.side-nav:hover ul li {
+    justify-content: flex-start;
+}
+.logo img{
+    float: left;
+    width: 50px;
+    height: auto;
+}
+footer{
+    text-align: center;
+    color: black;
+}

@@ -1,0 +1,439 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+/*home*/
+.home{
+	display: flex;
+	background: url(icon/1.jpg);
+	height: 100vh;
+	color: #fff;
+	min-height: 500px;
+	font-family: 'ubuntu', sans-serif;
+}
+.home .max-width{
+	margin: auto 0 auto 40px;
+}
+.home .home-content .text1{
+	font-size: 27px;
+}
+.home .home-content .text1 span{
+	color: #000000;
+	font-weight: 500;
+}
+.home .home-content .text2{
+	font-size: 75px;
+	font-weight: 600;
+	margin-left: -3px;
+}
+.home .home-content .text2 span{
+	color: darkgoldenrod;
+	font-weight: 500;
+}
+.max-width{
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+/*NAVBAR*/
+.navbar{
+	position: fixed;
+	width: 100%;
+	padding: 15px 0;
+	font-family: 'ubuntu', sans-serif;
+	z-index: 999;
+	
+}
+
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	
+
+}
+
+.navbar .logo a{
+	color: #fff;
+	font-size: 35px;
+	font-weight: 600;
+}
+.navbar .logo a .span1{
+	color: darkgoldenrod;
+}
+.navbar .logo a .span2{
+	color: darkgoldenrod;
+}
+.navbar .logo a .span3{
+	color: darkgoldenrod;
+}
+.navbar .logo a .span4{
+	color: darkgoldenrod;
+}
+.navbar .logo a .span5{
+	color: darkgoldenrod;
+}
+.navbar .logo a .span6{
+	color: darkgoldenrod;
+}
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+.navbar .menu li span{
+	color: darkgoldenrod;
+}
+.navbar .menu li .asd1{
+	color: darkgoldenrod;
+}
+.navbar .menu li.asd2{
+	color: darkgoldenrod;
+}
+.navbar .menu li span:hover{
+	color: darkgoldenrod;
+	transition: color 0.3s ease;
+}
+.navbar .menu li a{
+	position: relative;
+	font-size: 1.1em;
+	color:darkgoldenrod;
+	text-decoration: none;
+	font-weight: 400;
+	margin-left: 40px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: #eee;
+}
+.logo img{
+    float: left;
+    width: 50px;
+    height: auto;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(icon/nbg.png);
+    background-position: center;
+    background-size: cover;
+}
+.side-nav{
+    width: 110px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(255,255,255, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: width 0.5s;
+    
+} 
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    font-size: 12px;
+    padding: 10px
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.user div{
+    display: none;
+
+
+}
+.user h2{
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.user img{
+    width: 30px;
+    border-radius: 40%;
+    margin: auto;
+    justify-content: center;
+}
+.star-img{
+    width: 20px;
+    display: none;
+}
+
+ul{
+    list-style:none;
+    padding: 0 15px;   
+}
+ul li {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+ul li img{
+    width: 30px;
+    margin-right: 0px;
+
+}
+ul li p{
+    white-space: nowrap;
+    display: none;
+}
+
+.side-nav:hover{
+    width: 250px;
+
+}
+.side-nav:hover user.div{
+    display: block;
+}
+.side-nav:hover .user{
+    width: 100%;
+    background: rgba(255,255,255, 0.2);
+    backdrop-filter: blur(5px);
+
+}
+.side-nav:hover .user.img{
+    margin: 0 ;
+
+}
+.side-nav:hover ul li p {
+    display: block;
+
+}
+.side-nav:hover ul li img{
+    margin-right: 10px;
+}
+.side-nav:hover ul li {
+    justify-content: flex-start;
+}
+/*ABOUT*/
+section{
+	padding: 0px 0;
+}
+.about .title{
+	position: relative;
+	font-family: 'ubuntu', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 60px;
+	padding-bottom: 15px;
+	padding-top: 40px;
+}
+.about .title::before{
+	content: "";
+	position: absolute;
+	width: 180px;
+	height: 3px;
+	background: #000;
+}
+.about .title::after{
+	position: absolute;
+	bottom: 55px;
+	left: 50%;
+	font-size: 13px;
+	color: #FD3282;
+	padding: 0px;
+	background: #fff;
+	transform: translateX(-50%);
+}
+.about .about-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: justify;
+	padding-bottom: 50px;
+}
+.about .about-content .left{
+	width: 45%;
+	padding-bottom: 32px;
+}
+.about .about-content .left img{
+	height: 400px;
+	width: 400px;
+	object-fit: cover;
+	border-radius: 7px;
+	box-shadow: 10px 10px 5px #65605F;
+}
+.about .about-content .right{
+	float: right;
+	width: 55%; 
+}
+.about .about-content .right .text{
+	font-size: 25px;
+	font-weight: 600;
+	font-family: 'ubuntu', sans-serif;
+	margin-bottom: 10px;
+}
+.about .about-content .right p{
+	font-family: 'ubuntu', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+}
+.about .about-content .right .text span{
+	color: #ffffff;
+}
+/*contact*/
+section{
+	padding: 50px 0 20px;
+}
+.contact{
+	background: #352E5A;
+	color: #fff;
+	font-family: 'ubuntu', sans-serif;
+}
+.contact .title{
+	position: relative;
+	font-family: 'ubuntu', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 10px;
+	padding-top: 40px;
+}
+.contact .title::before{
+	content: "";
+	position: absolute;
+	width: 142px;
+	height: 3px;
+	background: #fff;
+}
+.contact .title::after{
+	position: absolute;
+	bottom: 55px;
+	left: 50%;
+	font-size: 13px;
+	color: #fff;
+	padding: 0px;
+	background: #fff;
+	transform: translateX(-50%);
+}
+.contact .contact-content{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.about .contact-content .form{
+	width: 45%;
+	padding-left: 50px;
+	font-family: 'ubuntu', sans-serif;
+}
+/*contact form*/
+section{
+	padding: 50px 0 20px;
+}
+.contact{
+	background: black;
+	color: #fff;
+	font-family: 'ubuntu', sans-serif;
+}
+.contact .title{
+	position: relative;
+	font-family: 'ubuntu', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 10px;
+	padding-top: 40px;
+}
+.contact .title::before{
+	content: "";
+	position: absolute;
+	width: 142px;
+	height: 3px;
+	background: #fff;
+}
+.contact .title::after{
+	position: absolute;
+	bottom: 55px;
+	left: 50%;
+	font-size: 13px;
+	color: #fff;
+	padding: 0px;
+	background: #fff;
+	transform: translateX(-50%);
+}
+.contact .contact-content{
+	display: flex;
+	flex-wrap: wrap;a
+	align-items: center;
+	justify-content: space-between;
+}
+.about .contact-content .form{
+	width: 45%;
+	padding-left: 50px;
+	font-family: 'ubuntu', sans-serif;
+}
+/*contact form*/
+section{
+	padding: 50px 0 20px;
+}
+
+.contact-content .form {
+	width: 50%;
+}
+th, td {
+   padding: 5px;
+   text-align: left;
+   border-radius: 10px;
+}
+#newsletter button, .quote button{
+    display:block;
+ }
+#newsletter form input[type="email"], .quote input, .quote textarea{
+    margin-bottom:5px;
+ }
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid darkgoldenrod;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: darkgoldenrod;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'ubuntu', sans-serif;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+input[type=submit]:hover {
+  background-color: darkgoldenrod;;
+  color: darkgoldenrod;;
+}
+.contact .contact-content .right{
+	padding-bottom: 50px;
+}
+.contact .contact-content .right .fab{
+	font-size: 40px;
+	display: block;
+	height:0px;
+}
+.logo img{
+ 	float: left;
+ 	width: 50px;
+ 	height: auto;
+ }  
+ footer{
+	text-align: center;
+	background-color: #000;
+	color: white;
+ }

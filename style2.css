@@ -1,0 +1,96 @@
+button {
+    background-color: #111827;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    text-decoration: none #6B7280 solid;
+    text-decoration-thickness: auto;
+    transition-duration: .2s;
+    transition-property: background-color,border-color,color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+   }
+   
+   button:hover {
+    background-color: #374151;
+   }
+   
+   button:focus {
+    box-shadow: none;
+    outline: 2px solid white;
+    outline-offset: 2px;
+   }
+   
+   @media (min-width: 768px) {
+    button {
+     padding: .75rem 1.5rem;
+    }
+   }
+
+   button.social.google {
+    max-width: 320px;
+    display: flex;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    gap: 0.75rem;
+    color: rgb(65, 63, 63);
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .6s ease;
+    margin: 0 auto;
+  }
+  
+  button.social svg {
+    height: 24px;
+  }
+  
+  button.social:hover {
+    transform: scale(1.02);
+  }
+  input[type=email] {
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .signin-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .sign-in {
+    width: 500px;
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 8px;
+  }
+  body {
+    background: url(1perfume.jpg) no-repeat;
+    background-position: top center;
+    background-size: cover
+  }
